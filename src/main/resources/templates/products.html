@@ -1,17 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Shop</title>
-    <link rel="stylesheet" th:href="@{/uikit.min.css}">
-    <link rel="stylesheet" th:href="@{/style.css}">
-    <script th:src="@{/uikit.min.js}"></script>
-    <script th:src="@{/uikit-icons.min.js}"></script>
-</head>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout(~{::.uk-container})}">
+
 <body>
-
-<div th:replace="~{fragments/navbar :: navbar}"></div>
-
 
 <div class="uk-container uk-margin-large-top" uk-height-viewport="expand: true">
     <div class="uk-grid-large" uk-grid="masonry: true">
@@ -65,10 +55,6 @@
         </div>
     </div>
 </div>
-
-<div th:replace="~{fragments/footer ::footer}"></div>
-
-
 
 </body>
 </html>

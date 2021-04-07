@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Shop</title>
-    <link rel="stylesheet" th:href="@{/uikit.min.css}">
-    <link rel="stylesheet" th:href="@{/style.css}">
-    <script th:src="@{/uikit.min.js}"></script>
-    <script th:src="@{/uikit-icons.min.js}"></script>
-</head>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout(~{::.uk-container})}">
+
 <body>
 
-<div th:replace="~{fragments/navbar :: navbar}"></div>
 
 <div class="uk-container uk-container-small uk-margin-large-top uk-margin-large-bottom" uk-height-viewport="expand: true">
     <h1 class="uk-heading-2xlarge uk-text-center">404 Error</h1>
     <h1 class="uk-heading-2xlarge uk-text-center">: (</h1>
 </div>
-<div th:replace="~{fragments/footer ::footer}"></div>
+
 
 
 
